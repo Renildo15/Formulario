@@ -8,29 +8,29 @@
   </head>
   <body>
     <div>
-		<h1>Cadastro de DEVs</h1>
-		<p>Complete as suas informações</p>
+		<h1 id="titulo">Cadastro de DEVs</h1>
+		<p id="subtitulo">Complete as suas informações</p>
 		<br>
 	</div>
 
 	<form>
-		<fieldset>
-			<div>
+		<fieldset class="grupo">
+			<div class="campo">
 				<label>Nome</label>
 				<input type="text" name="nome" id= "nome">
 			</div>
 
-			<div>
+			<div class="campo">
 				<label>Sobrenome</label>
 				<input type="text" name="sobrenome" id="sobrenome">
 			</div>
 		</fieldset>
-		<div>
+		<div class="campo">
 			<label>Email</label>
 			<input type="Email" name="email" id="email">
 		</div>
 
-		<div>
+		<div class="campo">
 			<label>De qual lado da aplicação você desenvolve</label>
 			<label>
 				<input type="radio" name="devweb" value="frontend" checked="">Fron-end
@@ -45,7 +45,7 @@
 			</label>
 		</div>
 
-		<div>
+		<div class="campo">
 			<label>Senior idade</label>
 			<select id="seniroidade">
 				<option selected disabled value="">Selecione</option>
@@ -55,8 +55,8 @@
 			</select>
 		</div>
 
-		<fieldset>
-			<div>
+		<fieldset class="grupo">
+			<div class="campo">
 				<label>Selecione as tecnologias que utiliza:</label><br><br>
 				<input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
 				<label for="tecnologia1">HTML</label>
@@ -81,7 +81,7 @@
 			</div>
 		</fieldset>
 
-		<div>
+		<div class="campo">
 			<br>
 			<label>Conte um pouco da sua experiencia</label>
 			<textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
