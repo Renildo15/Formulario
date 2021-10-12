@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Formulario</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -16,22 +16,22 @@
 	<form>
 		<fieldset class="grupo">
 			<div class="campo">
-				<label>Nome</label>
-				<input type="text" name="nome" id= "nome">
+				<label for="nome"><strong>Nome</strong></label>
+				<input type="text" name="nome" id= "nome" required>
 			</div>
 
 			<div class="campo">
-				<label>Sobrenome</label>
-				<input type="text" name="sobrenome" id="sobrenome">
+				<label for="sobrenome"><strong>Sobrenome</strong></label>
+				<input type="text" name="sobrenome" id="sobrenome" required>
 			</div>
 		</fieldset>
 		<div class="campo">
-			<label>Email</label>
-			<input type="Email" name="email" id="email">
+			<label for="email"><strong>Email</strong></label>
+			<input type="Email" name="email" id="email" required>
 		</div>
 
 		<div class="campo">
-			<label>De qual lado da aplicação você desenvolve</label>
+			<label><strong>De qual lado da aplicação você desenvolve</strong></label>
 			<label>
 				<input type="radio" name="devweb" value="frontend" checked="">Fron-end
 			</label>
@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="campo">
-			<label>Senior idade</label>
+			<label><strong>Senior idade</strong></label>
 			<select id="seniroidade">
 				<option selected disabled value="">Selecione</option>
 				<option>Junior</option>
@@ -57,7 +57,7 @@
 
 		<fieldset class="grupo">
 			<div class="campo">
-				<label>Selecione as tecnologias que utiliza:</label><br><br>
+				<label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
 				<input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
 				<label for="tecnologia1">HTML</label>
 
@@ -83,11 +83,11 @@
 
 		<div class="campo">
 			<br>
-			<label>Conte um pouco da sua experiencia</label>
+			<label><strong>Conte um pouco da sua experiencia</strong></label>
 			<textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
 		</div>
 
-		<button type="submit">Concluído</button>
+		<button type="submit"><strong>Concluído</strong></button>
 	</form>
   </body>
 </html>
