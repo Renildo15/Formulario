@@ -33,6 +33,15 @@ input, select, text, button{
     border-radius: 5px;
 }
 
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+
+.grupo:after {
+    clear: both;
+}
+
 .campo{
     margin-bottom: 1em;
 }
@@ -87,4 +96,8 @@ fieldset.campo.grupo{
 
 #check{
     display: inline-block;
+}
+
+.botao, select{
+    cursor: pointer;
 }
